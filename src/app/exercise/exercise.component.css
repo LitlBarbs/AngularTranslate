@@ -1,0 +1,27 @@
+.left-border {
+  border-left:
+  5px solid grey;
+}
+
+.is-correct {
+  color: greenyellow;
+}
+
+.is-incorrect {
+  color: red;
+  text-decoration: line-through;
+}
+
+div, h1, h3 {
+  margin: 1rem;
+}
+
+.score1 {
+  font-style: bold;
+  color: rgb(0, 255, 179);
+}
+
+.score2 {
+  font-size: 2rem;
+  color: purple;
+}

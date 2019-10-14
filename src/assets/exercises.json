@@ -1,0 +1,83 @@
+[
+  {
+    "language": "English",
+    "exercise": [
+      {
+        "id": 1,
+        "q": "Animal that meows is called a ",
+        "a": "cat"
+      },
+      {
+        "id": 2,
+        "q": "Animal that barks is called a ",
+        "a": "dog"
+      },
+      {
+        "id": 3,
+        "q": "Animal that sings is called a ",
+        "a": "bird"
+      }
+    ]
+  },
+  {
+    "language": "Deutsch",
+    "exercise": [
+      {
+        "id": 1,
+        "q": "Tier, das miaut, heißt ",
+        "a": "Katze"
+      },
+      {
+        "id": 2,
+        "q": "Tier, das bellt, heißt ",
+        "a": "Hund"
+      },
+      {
+        "id": 3,
+        "q": "Tier, das singt, heißt ",
+        "a": "Vogel"
+      }
+    ]
+  },
+  {
+    "language": "Francais",
+    "exercise": [
+      {
+        "id": 1,
+        "q": "Animal qui miaule s'appele un ",
+        "a": "chat"
+      },
+      {
+        "id": 2,
+        "q": "L'animal qui aboie s'appele un ",
+        "a": "chien"
+      },
+      {
+        "id": 3,
+        "q": "L'animal qui chante s'appele un ",
+        "a": "oiseau"
+      }
+    ]
+  },
+  {
+    "language": "Slovenščina",
+    "exercise": [
+      {
+        "id": 1,
+        "q": "Žival, ki mijavka se imenuje ",
+        "a": "mačka"
+      },
+      {
+        "id": 2,
+        "q": "Žival, ki laja se imenuje ",
+        "a": "pes"
+      },
+      {
+        "id": 3,
+        "q": "Žival, ki poje se imenuje ",
+        "a": "ptica"
+      }
+    ]
+  }
+
+]

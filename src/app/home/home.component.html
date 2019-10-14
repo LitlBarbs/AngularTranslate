@@ -1,0 +1,35 @@
+<div class="bg">
+<!-- Welcome section-->
+<div *ngIf="!loggedIn">
+  <h1>{{'Welcome'|translate}}</h1>
+  <p>{{'Select'|translate}}</p>
+    <!--Language Selection-->
+    <select #langSelect (change)="_translateService.use(langSelect.value)">
+      <option *ngFor="let lang of _translateService.getLangs(); index as i" value="{{lang}}">{{lang}}</option>
+    </select>
+  </div>
+
+  <!--Login form-->
+  <div *ngIf="!loggedIn">
+  <h2>{{'Login'|translate}}</h2>
+  <form [formGroup]="loginForm">
+      <input type="text" formControlName="username" [class.is-invalid]="loginForm.get('username').invalid && loginForm.get('username').touched"><br>
+      <small *ngIf="loginForm.get('username').invalid && loginForm.get('username').touched  " class="text-danger">{{'Required'|translate}}</small><br>
+      <input type="password" formControlName="password" [class.is-invalid]="loginForm.get('password').invalid && loginForm.get('password').touched"><br>
+      <small *ngIf="loginForm.get('password').invalid && loginForm.get('password').touched" class="text-danger">{{'Required'|translate}}</small><br/>
+      <small *ngIf="noMatch" class="text-danger">Username or password do not match, please try again.</small><br/>
+      <button [disabled]="loginForm.get('username').invalid || loginForm.get('password').invalid"  type="button" (click)="logIn()">{{'Login1'|translate}}</button>
+  </form>
+</div>
+
+
+<!-- Greet section after login-->
+  <div *ngIf="loggedIn">
+    <h1>{{'Hi'|translate}} {{loginForm.value.username}}</h1>
+      <h2 translate>StartQuestion</h2>
+        <div routerLink="../theory" translate class="blue-text">Theory</div>
+        <div routerLink="../exercise" translate class="blue-text">Exercise</div>
+        <button id="button1" type="button" (click)="logOut()" translate>LogOut</button>
+  </div>
+
+

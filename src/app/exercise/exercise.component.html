@@ -1,0 +1,61 @@
+<h1 translate>Exercise1</h1>
+<h3 translate>SelectPracticeLang</h3>
+<div>
+  <form [formGroup]="exercisesForm">
+      <select formControlName="language" *ngIf="exercisesForm.value.language == -1">
+          <option value="-1" translate>Select1</option>
+          <option *ngFor="let lang of exercises; index as i" value="{{i}}">{{lang.language}}</option>
+      </select>
+
+      <!-- English Exercises
+      <div *ngIf="exercisesForm.value.language == 0">
+          <div *ngFor="let e of exercises[0].exercise;  index as i">
+            <p class="left-border">{{e.q}}<input formControlName="a" type="text"  /></p>
+              <div *ngIf="show"><p >{{e.a}}</p></div>
+          </div>
+      </div>-->
+      {{exercisesForm.value|json}}
+      <div *ngIf="exercisesForm.value.language == 0">
+            <p class="left-border">{{exercises[0].exercise[0].q}}<input formControlName="a1" type="text" [style.color]="defaultColor" id="en1"/></p>
+            <div *ngIf="show"><p >{{exercises[0].exercise[0].a}}</p></div>
+            <p class="left-border">{{exercises[0].exercise[1].q}}<input formControlName="a2" type="text" [style.color]="defaultColor" id="en2" /></p>
+            <div *ngIf="show"><p >{{exercises[0].exercise[1].a}}</p></div>
+            <p class="left-border">{{exercises[0].exercise[2].q}}<input formControlName="a3" type="text" [style.color]="defaultColor" id="en3" /></p>
+            <div *ngIf="show"><p >{{exercises[0].exercise[2].a}}</p></div>
+      </div>
+
+
+      <!-- German Exercises -->
+      <div *ngIf="exercisesForm.value.language == 1">
+          <p class="left-border">{{exercises[1].exercise[0].q}}<input formControlName="a1" type="text" [style.color]="defaultColor" id="de1"/></p>
+          <div *ngIf="show"><p >{{exercises[1].exercise[0].a}}</p></div>
+          <p class="left-border">{{exercises[1].exercise[1].q}}<input formControlName="a2" type="text" [style.color]="defaultColor" id="de2"/></p>
+          <div *ngIf="show"><p >{{exercises[1].exercise[1].a}}</p></div>
+          <p class="left-border">{{exercises[1].exercise[2].q}}<input formControlName="a3" type="text" [style.color]="defaultColor" id="de3"/></p>
+          <div *ngIf="show"><p >{{exercises[1].exercise[2].a}}</p></div>
+      </div>
+
+      <!-- French Exercises -->
+      <div *ngIf="exercisesForm.value.language == 2">
+        <div *ngFor="let e of exercises[2].exercise; index as i" >
+          <p class="left-border">{{e.q}}<input type="text" formControlName="a" /></p>
+          <div *ngIf="show"><p>{{e.a}}</p></div>
+        </div>
+      </div>
+
+      <!-- Slovenian Exercises -->
+      <div *ngIf="exercisesForm.value.language == 3">
+        <div *ngFor="let e of exercises[3].exercise;">
+          <p class="left-border">{{e.q}}<input type="text" /></p>
+          <div *ngIf="show"><p>{{e.a}}</p></div>
+        </div>
+      </div>
+     <button [disabled]="isDisabled" *ngIf="exercisesForm.value.language != -1" type="submit" translate (click)="checkAnswer(exercisesForm.value.language,exercises[exercisesForm.value.language].exercise.id )">Check</button>
+  </form>
+  <!--<p *ngIf="exercisesForm.value.language != -1" class="score">Score: {{score}}</p>-->
+  <p *ngIf="isDisabled" [ngClass]="scoreClass">{{username.username}} you've scored: {{score}} </p>
+</div>
+<div routerLink="/" translate class="blue-text">BackToStart</div>
+<div routerLink="../theory" translate class="blue-text">Theory</div>
+<div (click)="resetExercise()" *ngIf="exercisesForm.value.language != -1" translate class="blue-text">Exercise</div>
+

@@ -1,0 +1,18 @@
+{
+  "Welcome": "Welcome to Etemenanki, Stranger!",
+  "Login": "Login and dive in!",
+  "Select": "Please select your language:",
+  "Login1" : "Login",
+  "Required": "Required!",
+  "Theory": "Theory",
+  "Theory1": "ENGLISH: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc porta elit a ante lacinia mollis. Suspendisse ultricies dolor odio, quis ultricies neque efficitur sed. Suspendisse finibus velit sed sapien scelerisque tincidunt. Morbi facilisis est et ante venenatis, nec convallis orci tristique. Quisque mattis eros et risus placerat tempor vitae in sem. Praesent volutpat gravida elit in interdum. Praesent iaculis eu mi a maximus. Morbi sodales aliquam elit, nec finibus libero. Integer sit amet convallis nunc, sit amet rhoncus velit.",
+  "Hi": "Hi, ",
+  "BackToStart": "Back to Start",
+  "Exercise": "To Exercises",
+  "Check": "Check",
+  "Exercise1" : "Exercise 1",
+  "StartQuestion": "To read or to practice? That is the question.",
+  "SelectPracticeLang" : "Select the language that you would like to practice today: ",
+  "LogOut": "LogOut",
+  "Select1": "Select"
+}

@@ -1,0 +1,18 @@
+{
+  "Welcome": "Dobrodošel pri Etemenanki, neznanec!",
+  "Login": "Prijavi se in začni!",
+  "Select": "Prosimo izberi svoj jezik:",
+  "Login1" : "Prijava",
+  "Required": "Obvezno polje!",
+  "Theory": "Teorija",
+  "Theory1": "SLOVENŠČINA: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc porta elit a ante lacinia mollis. Suspendisse ultricies dolor odio, quis ultricies neque efficitur sed. Suspendisse finibus velit sed sapien scelerisque tincidunt. Morbi facilisis est et ante venenatis, nec convallis orci tristique. Quisque mattis eros et risus placerat tempor vitae in sem. Praesent volutpat gravida elit in interdum. Praesent iaculis eu mi a maximus. Morbi sodales aliquam elit, nec finibus libero. Integer sit amet convallis nunc, sit amet rhoncus velit.",
+  "Hi": "Zdravo, ",
+  "BackToStart": "Nazaj na začetek",
+  "Exercise": "Vaje",
+  "Check": "Preveri",
+  "Exercise1" : "Vaja1",
+  "StartQuestion": "Brati ali vaditi? To je vprasanje.",
+  "SelectPracticeLang" : "Kateri jezik zelis vaditi danes: ",
+  "LogOut": "Odjava",
+  "Select1": "Izberi"
+}

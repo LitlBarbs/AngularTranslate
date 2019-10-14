@@ -1,0 +1,18 @@
+{
+  "Welcome": "Bienvenue sur Etemenanki, l'étranger!",
+  "Login": "Login et commencer!",
+  "Select": "Veuillez choisir votre langue:",
+  "Login1" : "Login",
+  "Required": "Obligatoire!",
+  "Theory": "La théorie",
+  "Theory1": "Français: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc porta elit a ante lacinia mollis. Suspendisse ultricies dolor odio, quis ultricies neque efficitur sed. Suspendisse finibus velit sed sapien scelerisque tincidunt. Morbi facilisis est et ante venenatis, nec convallis orci tristique. Quisque mattis eros et risus placerat tempor vitae in sem. Praesent volutpat gravida elit in interdum. Praesent iaculis eu mi a maximus. Morbi sodales aliquam elit, nec finibus libero. Integer sit amet convallis nunc, sit amet rhoncus velit.",
+  "Hi": "Salut, ",
+  "BackToStart": "Retour au début",
+  "Exercise": "Les exercices",
+  "Check": "Vérifier",
+  "Exercise1" : "L'exercise 1",
+  "StartQuestion": "Lire ou pratiquer? Telle est la question.",
+  "SelectPracticeLang" : "Sélectionnez la langue que tu souhaite pratiquer aujourd'hui: ",
+  "LogOut": "Déconnexion",
+  "Select1": "Choisi"
+}
